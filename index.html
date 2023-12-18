@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      height:748px;
+      width:748px;
+      background-color: #000;
+      display:grid;
+      grid-template-columns: 320px 360px 50px;
+      grid-column-gap:9px;
+      grid-template-rows: 414px 296px 22px;
+      grid-row-gap:9px;
+    }
+    .one{
+      background-color: #E72F24;
+    }
+    .two{
+      background-color: #F0F1EC;
+      grid-column: span 2;
+    }
+    /* .three{
+      background-color: #F0F1EC;
+    } */
+    .four{
+      height: 296px;
+      width:320px;
+      background-color: #F0F1EC;
+    }
+    .five{
+      height:295px;
+      width:360px;
+      background-color: #F0F1EC;
+    }
+    .six{
+      display:grid;
+      grid-template-rows: 130px 155px;
+      grid-row-gap:10px;
+    }
+    .sixa{
+      background-color: #004592;
+    }
+    .sixb{
+      background-color: #F0F1EC;
+      grid-row:span 4;
+    }
+    /* Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E */
+    .seven{
+      height: 20px;
+      width: 320px;
+      background-color: #F0F1EC;
+    }
+    .eight{
+      display: grid;
+      grid-template-columns: 198px 153px;
+      grid-column-gap:9px;
+    }
+    .nine{
+      height:20px;
+      width:198px;
+      background-color: #F9D01E;
+    }
+    .ten{
+      height: 20px;
+      width: 153px;
+      background-color: #232629;
+    }
+    /* .eleven{
+      background-color: #F0F1EC;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item one"></div>
+    <div class="item two"></div>
+    <div class="item four"></div>
+      <div class="item five"></div>
+      <div class="item six">
+        <div class="item sixa"></div>
+        <div class="item sixb"></div>
+      </div>
+    <div class="item seven"></div>
+    <div class="item eight">
+      <div class="item nine"></div>
+      <div class="item ten"></div>
+    <!-- <div class="item eleven"></div> -->
+    </div>
+  </div>
+</body>
+
+</html>
